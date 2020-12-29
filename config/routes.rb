@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'saloons/index'
   resources :services
   root 'home#index'
   devise_for :users, :controllers => {registrations: 'registrations'}
